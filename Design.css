@@ -4,3 +4,33 @@ h1 {
 body {
 	font-family: "Source Sans Pro", sans-serif;
 }
+ul.tabs {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+ul.tabs li {float: left;}
+
+ul.tabs li a {
+	text-align: center;
+	padding: 15px 15px;
+	font-size: 16px;
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+}
+
+ul.tabs li a:hover {background-color: #ddd;}
+
+ul.tabs li a:focus, .active {background-color: #ccc;}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
