@@ -10,13 +10,29 @@
 			<h1>Revision Website</h1>
 
 			<ul class="tabs">
-				<li><a href="">HL Mathematics</a></li>
-				<li><a href="">HL Chemistry</a></li>
-				<li><a href="">HL Physics</a></li>
-				<li><a href="">SL Economics</a></li>
-				<li><a href="">SL Business</a></li>
-				<li><a href="">SL Language and Literature</a></li>
-				<li><a href="">SL Literature</a></li>
+ 				<li><a href="#home">Home</a></li>
+				<li><a href="#chem">HL Chemistry</a></li>
+				<li><a href="#physics">HL Physics</a></li>
+
+				<!--format for other buttons-->
+				<li class="dropdown">
+					<a href="#math" class="dropbtn">HL Mathematics</a>
+    				<div class="dropdown-content">
+    					<div id="myDropdown" class="dropdown-content">
+    					<input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+      					<a href="#">Algebra</a>
+      					<a href="#">Functions and equations</a>
+      					<a href="#">Circular functions and trigonometry</a>
+      					<a href="#">Vectors</a>
+      					<a href="#">Statistics and probability</a>
+      					<a href="#">Calculus</a>
+    				</div>
+  				</li>
+
+  				<li><a href="#langlit">SL Language and Literature</a></li>
+  				<li><a href="#lit">SL Literature</a></li>
+  				<li><a href="#business">SL Business</a></li>
+  				<li><a href="#economics">SL Economics</a></li>
 			</ul>
 
 		</body>
