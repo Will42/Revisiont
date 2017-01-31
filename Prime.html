@@ -11,7 +11,27 @@
 
 			<ul class="tabs">
  				<li><a href="Prime.html">Home</a></li>
-				<li><a href="#chem">HL Chemistry</a></li>
+				<li class="dropdown">
+					<a href="#chem" class="dropbtn">HL Chemistry</a>
+					<div class="dropdown-content">
+						<div id="myDropdown" class="dropdown-content">
+							<input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+      						<a href="#">Stoichiometric Relationships</a>
+      						<a href="#">Atomic Structure</a>
+      						<a href="#">Periodicity</a>
+      						<a href="#">Chemical Bonding and Structure</a>
+      						<a href="#">Energetics/Thermochemistry</a>
+      						<a href="#">Chemical Kinetics</a>
+      						<a href="#">Equilibrium</a>
+      						<a href="#">Acids and Bases</a>
+      						<a href="#">Redox Processes</a>
+      						<a href="#">Organic Chemistry</a>
+      						<a href="#">Measurement and Data Processing</a>
+      						<a href="#">Atomic Structure</a>
+      						<a href="#">The Periodic Table</a>
+      					</div>
+					</div>
+				</li>
 				<li><a href="#physics">HL Physics</a></li>
 
 				<!--format for other buttons-->
@@ -19,13 +39,14 @@
 					<a href="#math" class="dropbtn">HL Mathematics</a>
     				<div class="dropdown-content">
     					<div id="myDropdown" class="dropdown-content">
-    					<input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
-      					<a href="#">Algebra</a>
-      					<a href="#">Functions and equations</a>
-      					<a href="#">Circular functions and trigonometry</a>
-      					<a href="#">Vectors</a>
-      					<a href="#">Statistics and probability</a>
-      					<a href="#">Calculus</a>
+    						<input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+      						<a href="#">Algebra</a>
+      						<a href="#">Functions and equations</a>
+      						<a href="#">Circular functions and trigonometry</a>
+      						<a href="#">Vectors</a>
+      						<a href="#">Statistics and probability</a>
+      						<a href="#">Calculus</a>
+      					</div>
     				</div>
   				</li>
 
