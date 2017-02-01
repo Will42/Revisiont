@@ -1,40 +1,47 @@
-.header{
-    background-color: #F19143;
-    width: 100%;
-    height: 60px;
-    top:0px;
-    left: 0px;
-    position: absolute;
-}
-.picture-slide{
-    width: 100%;
-    height: 300px;
-    position:absolute;
-    left: 0px;
-    top: 60px;
-    border: 1px solid black;
-    border-radius: 5px;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-.picture-slide h1{
-    font-family: 'Open Sans', sans-serif;
+.container {
+    min-height: 100%;
+    position: relative;
+}
+
+.header {
+    background: #F19143;
+    padding: 10px;
+    height:50px;
+    color: white;
+    font-size: 40px;
+    font-family: "Arial Black";
+}
+.header p{
+    margin-top:-5px;
     text-align: center;
-    font-size: 45;
-    margin-top:70px;
 }
 
-.main{
-    width: 100%;
-    position:absolute;
-    left: 0px;
-    top: 360px;
+.picture-slide{
+    outline: 1px solid black;
+    padding: 10px;
+    height: 300px;
 }
 
-.footer{
-    background-color: #F19143;
+.content {
+    padding-bottom: 100px; /* Height of the footer element */
+}
+
+.footer {
+    background: #F19143;
     width: 100%;
-    height: 40px;
-    bottom:0px;
-    left: 0px;
+    height: 100px;
     position: absolute;
+    bottom: 0;
+    left: 0;
 }
+
+.content p{
+    padding-left: 10px;
+}
+
