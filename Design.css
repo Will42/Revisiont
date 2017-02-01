@@ -50,9 +50,9 @@ html, body {
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 2px 0 0 #e5e5e5;
-    padding-top:10px;
-    padding-left:10px;
-    padding-right:20px;
+    padding-top:20px;
+    padding-left:50px;
+    padding-right:60px;
     text-align: justify;
     font-family: "Source Sans Pro", sans-serif;
     line-height: 200%;
@@ -131,6 +131,28 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    float: right;
+    margin-right: 20px;
+}
+
+input[type=text]:focus {
+    width: 20%;
+}
+
 
 
 
