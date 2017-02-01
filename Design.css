@@ -17,6 +17,7 @@ html, body {
     color: white;
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 
 .header p{
@@ -56,6 +57,29 @@ html, body {
     text-align: justify;
     font-family: "Source Sans Pro", sans-serif;
     line-height: 200%;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+hr{
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+
+hr:after {
+    content: '§';
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+    transform: rotate(90deg);
 }
 
 .footer {
