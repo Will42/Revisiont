@@ -30,7 +30,7 @@
               <a href="#" class="dropbtn">IB</a>
               <div class="dropdown-content">
                 <a href="#">HL Math</a>
-                <a href="Chem-IB.html">HL Chemistry</a>
+                <a href="#">HL Chemistry</a>
                 <a href="#">HL Physics</a>
                 <a href="#">SL Economics</a>
                 <a href="#">SL Business</a>
@@ -60,13 +60,10 @@
         
         </div>
         <div class="picture-slide">
-          <h1>REVISIONT</h1>
-          <p style="text-align:center">Hi! Welcome to Revisiont, a place to hold all your study materials, all while keeping your bag light. Upload a topic, a picture of your notes or general information for a subject to keep for future reference.</p>
+          <h1>Chemistry</h1>
         </div>
-        <div class="content">
-
-          <h1>Title Here</h1>
-
+        <div class="info content" id="Info">
+          <h1 id="top1">Topic 1:</h1>
           <hr></hr>
 
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend risus sed augue molestie, faucibus pretium mi fringilla. Nulla fermentum purus eget est fringilla ultrices. Aliquam imperdiet, diam vitae lobortis sodales, urna diam vehicula leo, ac cursus mi dolor non sem. Aliquam at pharetra risus. Aliquam id purus vitae eros consequat rhoncus vel sit amet velit. Nulla mollis ornare tortor eget pellentesque. Nullam arcu lorem, maximus sit amet eleifend eget, tempor id est. Nulla facilisi. Integer sed neque eros. Donec malesuada arcu id neque semper, non bibendum odio posuere. Praesent malesuada enim eget nisi cursus, non semper ex ultrices. Vestibulum sagittis, leo sit amet dictum pulvinar, neque augue consequat orci, nec sagittis leo eros non lacus. Quisque quis purus elementum, commodo odio eget, finibus eros. Suspendisse mauris ex, condimentum a odio non, pellentesque sodales ante. Ut tempus posuere ipsum efficitur sollicitudin. Aliquam ut consequat nibh.</p>
@@ -80,10 +77,34 @@
           <p>Vivamus diam erat, convallis et nisi ac, interdum faucibus nisi. Sed vitae fringilla nisl. Sed ac magna pretium, vehicula nibh non, malesuada mi. Nullam placerat facilisis nunc, non tincidunt ex porta eu. Donec rhoncus molestie ex, eu rutrum tellus malesuada convallis. Nulla cursus lobortis urna sit amet sagittis. Ut aliquam magna et dolor finibus, ut dapibus justo pharetra. Curabitur egestas aliquet turpis, et ornare velit pretium sed. Ut faucibus neque id felis vulputate, nec ornare felis ultrices. Mauris sit amet mi vitae nunc sagittis egestas. Praesent euismod nunc et felis suscipit, sed congue leo pellentesque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean blandit dignissim ex, in tincidunt eros ullamcorper sit amet. Donec in enim magna. Duis auctor quam ante, rhoncus dignissim enim molestie sed.</p>
 
         </div>
+        <div class="sidenav" id="fixedScroll">
+
+              <a href="#top1">1. Stoichiometric Relationships</a>
+              <a href="#">2. Atomic Structure</a>
+              <a href="#">3. Periodicity</a>
+              <a href="#">4. Chemical Bonding and Structure</a>
+              <a href="#">5. Energetics/Thermochemistry</a>
+              <a href="#">6. Chemical Kinetics</a>
+              <a href="#">7. Equilibrium</a>
+              <a href="#">8. Acids and Bases</a>
+              <a href="#">9. Redox Processes</a>
+              <a href="#">10. Organic Chemistry</a>
+              <a href="#">11. Measurement and Data Processing</a>
+ 
+          </div>
         <div class="footer">
           <p>Footer here</p>
         </div>
       </div>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $(window).scroll(function(){
+            $("#fixedScroll").css("top",Math.max(100,600-$(this).scrollTop()));
+          });
+        });
+      </script>
+
 		</body>
 
 	</html>

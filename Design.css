@@ -82,7 +82,7 @@ hr:after {
 }
 
 .footer {
-    background: #F19143;
+    background-color: #F19143;
     width: 100%;
     height: 100px;
     position: absolute;
@@ -91,6 +91,7 @@ hr:after {
     font-size: 40px;
     font-family: "Arial Black";
     text-align: center;
+    z-index: 10;
 }
 
 .footer p{
@@ -104,6 +105,7 @@ hr:after {
 
 .dropdown:hover .dropdown-content {
     display: block;
+    font-family: 'Arial';
 }
 
 ul {
@@ -163,6 +165,11 @@ input[type=text]:focus {
     width: 20%;
 }
 
+.sidenav {
+    display: none;
+}
+
+
 @media screen and (min-width:680px) {
     .content{
         margin:20px 10% 20px 10%;
@@ -191,6 +198,31 @@ input[type=text]:focus {
         min-width: 70px;
     }
 
+    #Info {
+    margin: 20px 1% 20px 25%;
+    padding-left:10px;
+    padding-right:10px;
+    }
+    .sidenav{
+        display: block;
+        border: 1px solid #e1e1e1;
+        z-index: 5;
+        padding-bottom: 10px;
+        position: fixed;
+        top:600px;
+        left: 1%;
+        background-color: #f1f1f1;
+        width:22.5%
+    }
+
+    .sidenav a{
+        text-decoration:underline;
+        color:black;
+        font-family: arial;
+        display: block;
+        padding: 10px 10px 0px 10px;
+        font-size: 10px;
+    }
 
 
 }
