@@ -14,13 +14,13 @@ window.onclick = function(event) {
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
       }
+  }
 
       for (i = 0; i < icon.length; i++) {
       var openIcon = icon[i];
       if (openIcon.classList.contains('change')) {
         openIcon.classList.remove('change');
       }
-    }
     }
   }
 }

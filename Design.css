@@ -139,7 +139,10 @@ li.dropdown {
 }
 
 .Dropdown {
-    display: none;
+    /*display: none;*/
+    height: auto;
+    margin-top: -400px;
+    transition:0.4s;
 }
 
 .bar1, .bar2, .bar3 {
@@ -152,15 +155,16 @@ li.dropdown {
 }
 
 .menu {
+        display: block;
         cursor: pointer;
         height: auto;
         width:35px;
-        margin-top: 0px;
+        margin-top: -7px;
+        padding: 5px;
 }
 
 .show{
-    display: block;
-    transition:0.4s;
+    margin-top: -7px;
 }
 
 .change .bar1 {
@@ -263,6 +267,8 @@ input[type=text]:focus {
     .Dropdown {
         display: block;
         background-color: #F19143;
+        margin-top: -10px;
+        height: 50px;
     }
     
     .bar1, .bar2, .bar3{
@@ -296,8 +302,13 @@ input[type=text]:focus {
     }   
 
     .dropdown-content a:hover {background-color: #f1f1f1}
+    
+    .menu {
+        display: none;
+    }
 
 }
+
 
 
 
