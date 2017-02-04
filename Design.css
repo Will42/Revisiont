@@ -37,11 +37,11 @@ html, body {
 }
 
 .picture-slide p {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .picture-slide h1{
-    margin-top: 100px;
+    margin-top: 90px;
 }
 
 .content {
@@ -305,6 +305,14 @@ input[type=text]:focus {
     
     .menu {
         display: none;
+    }
+
+    .picture-slide p {
+        margin-top: 50px;
+    }
+
+    .picture-slide h1{
+        margin-top: 100px;
     }
 
 }
