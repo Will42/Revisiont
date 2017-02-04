@@ -102,6 +102,7 @@ hr:after {
 
 .content p{
     padding-left: 10px;
+    font-size: 14px;
 }
 
 /*start*/
@@ -314,6 +315,10 @@ input[type=text]:focus {
 
     .picture-slide h1{
         margin-top: 100px;
+    }
+
+    .content p{
+    font-size: 17px;
     }
 
 }
