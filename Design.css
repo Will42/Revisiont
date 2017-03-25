@@ -213,6 +213,7 @@ p{
 table{
 	width:100%;
 	font-size: 12px;
+	text-align: center;
 }
 
 td, th {
