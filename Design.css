@@ -291,7 +291,7 @@ input[type=text]:focus {
 		margin-left: -10px;
         margin-top: -5px;
 		position: relative;
-		width: 250px;
+		width: 100%;
 		height: auto;
     }
 
