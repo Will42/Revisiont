@@ -109,7 +109,7 @@ hr:after {
 
 ul {
     list-style-type: none;
-    
+    font-size: 12px;
     padding: 0;
     
     font-family: 'Open Sans', sans-serif;
@@ -141,6 +141,7 @@ ul.bullet{
 	text-decoration: none;
 	text-indent: 100px;
 	background-color: white;
+	width: 100%;
 	
 }
 
@@ -322,6 +323,7 @@ th {
 		position: relative;
 		width: 100%;
 		height: auto;
+		font-size: 17px;
     }
 
     li {
