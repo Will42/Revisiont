@@ -109,18 +109,19 @@ hr:after {
 
 ul {
     list-style-type: none;
-    margin-left: -10px;
-    margin-top: -5px;
+    
     padding: 0;
-    overflow: hidden;
+    
     font-family: 'Open Sans', sans-serif;
-    width: 100%;
+    width: 250px;
     background-color: red;
-    position: absolute;
+	overflow-y: scroll;
+	height: 100vh;
+
 }
 
 .dropdown-content{
-    display: none;
+    display: block;
 }
 
 li a, .dropbtn {
@@ -142,8 +143,9 @@ li.dropdown {
 
 .Dropdown {
     /*display: none;*/
-    height: auto;
-    margin-top: -400px;
+    
+    margin-top: -2px;
+	margin-left: -260px;
     transition:0.4s;
 }
 
@@ -166,7 +168,7 @@ li.dropdown {
 }
 
 .show{
-    margin-top: -7px;
+	margin-left: -10px;
 }
 
 .change .bar1 {
@@ -271,6 +273,12 @@ input[type=text]:focus {
         background-color: #F19143;
         margin-top: -10px;
         height: 50px;
+		margin-left: 0px;
+		float: left;
+	    }
+	
+	.dropdown {
+        display: inline;
     }
     
     .bar1, .bar2, .bar3{
@@ -279,6 +287,12 @@ input[type=text]:focus {
 
     ul {
         margin-top: -10px;
+		padding: 0;
+		margin-left: -10px;
+        margin-top: -5px;
+		position: relative;
+		width: 250px;
+		height: auto;
     }
 
     li {
@@ -290,7 +304,7 @@ input[type=text]:focus {
     }
 
     li.dropdown {
-        display: inline-block;
+       display: block;
     }
 
     
@@ -322,14 +336,4 @@ input[type=text]:focus {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
 
