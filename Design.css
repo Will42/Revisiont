@@ -133,12 +133,15 @@ li a, .dropbtn {
     min-width: 30px;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: #e5892d;
-}
-
 li.dropdown {
     display: block;
+}
+
+ul.bullet{
+	text-decoration: none;
+	text-indent: 100px;
+	background-color: white;
+	
 }
 
 .Dropdown {
@@ -197,6 +200,32 @@ input[type=text]:focus {
     display: none;
 }
 
+p{
+	margin-top: -10px;
+}
+
+table{
+	width:100%;
+	font-size: 12px;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    min-width: 80px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
 
 @media screen and (min-width:680px) {
     
@@ -334,6 +363,10 @@ input[type=text]:focus {
     .content p{
     font-size: 17px;
     }
+
+    li a:hover, .dropdown:hover .dropbtn {
+    background-color: #e5892d;
+}
 
 }
 
