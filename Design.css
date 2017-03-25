@@ -29,7 +29,7 @@ h2, h3, h4{
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
 }
 
 .picture-slide{
