@@ -347,7 +347,9 @@ th {
     	text-indent: 100px;
     }
 
-    
+    img{
+    	width: 100%;
+    }
 
     .dropdown-content a {
         color: black;
