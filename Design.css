@@ -28,6 +28,10 @@ h2, h3, h4{
     margin-top:-5px;
 }
 
+img{
+    	max-width: 100%;
+    }
+
 .picture-slide{
     
     padding: 10px;
@@ -345,10 +349,6 @@ th {
     }
     ul.bullet{
     	text-indent: 100px;
-    }
-
-    img{
-    	width: 100%;
     }
 
     .dropdown-content a {
