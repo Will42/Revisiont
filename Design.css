@@ -38,7 +38,7 @@ img{
     height: 300px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    background-image: url("pic04.jpg");
+    background-image: url("./Images/pic04.jpg");
     background-position: top left;
     background-repeat: no-repeat;
     background-size:cover;
@@ -145,21 +145,16 @@ li.dropdown {
     display: block;
 }
 
-ul.bullet{
-	text-decoration: none;
-	text-indent: 0px;
-	background-color: white;
-	width: 100%;
-	height: 100%;
-	
-}
-
 .Dropdown {
     /*display: none;*/
     
     margin-top: -2px;
 	margin-left: -260px;
     transition:0.4s;
+}
+
+.restab{
+	overflow-x: auto;
 }
 
 .bar1, .bar2, .bar3 {
@@ -211,13 +206,14 @@ input[type=text]:focus {
 }
 
 p{
-	margin-top: -10px;
+	line-height: 15px;
 }
 
 table{
 	width:100%;
 	font-size: 12px;
 	text-align: center;
+	overflow: scroll;
 }
 
 td, th {
@@ -267,7 +263,7 @@ th {
         border-radius: 4px;
         font-size: 16px;
         background-color: white;
-        background-image: url('searchicon.png');
+        background-image: url('./Images/searchicon.png');
         background-position: 10px 10px; 
         background-repeat: no-repeat;
         padding: 12px 20px 12px 40px;
@@ -347,9 +343,6 @@ th {
     li.dropdown {
        display: block;
     }
-    ul.bullet{
-    	text-indent: 100px;
-    }
 
     .dropdown-content a {
         color: black;
@@ -381,8 +374,15 @@ th {
     background-color: #e5892d;
 	}
 
-	h2, h3, h4{
+	h3, h4{
 		text-align: left;
+	}
+	h2 {
+		text-align: center;
+	}
+	p{
+		line-height: 30px;
+		margin: 10px;
 	}
 
 }
