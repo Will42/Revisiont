@@ -15,6 +15,9 @@
         });
       </script>
       <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+      <style>
+        .mySlides {display:none;}
+      </style>
       <title>IB Physics</title>
 		</head>
 
@@ -69,9 +72,28 @@
             </ul>
         
         </div>
-        <div class="picture-slide">
-          <h1>Physics</h1>
+        <div class="picture-slide" >
+          <!--<div style="height:300px;width:500px">-->
+          <img class="mySlides" src="./Images/PhysWall1.jpg" style="width:100%">
+          <img class="mySlides" src="./Images/PhysWall2.jpg" style="width:100%">
+          <img class="mySlides" src="./Images/PhysWall3.jpg" style="width:100%">
         </div>
+        <script>
+          var myIndex = 0;
+          carousel();
+
+          function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+          }
+        </script>
         <div class="info content" id="Info">
           <h1 id="top1">Topic 1: Measurements and Uncertainties</h1>
           <hr></hr>
@@ -427,6 +449,19 @@
           <img src="./Images/InelasticEnergyGained.png">
           <p>The initial momentum is zero as neither objects are in motion. After the collision the momentum: $m_1 v_1 + m_2 v_2 = 0$ so $m_1 v_1 = –m_2 v_2$ The objects move in opposite directions. If the masses are equal the speeds are the same with the velocities having negative signs to one another. If the masses are not equal then: ${m_1 \over m_2} = {–v_2 \over v_1}$</p>
           <h3>Energy an momentum</h3>
+          <p>Kinetic energy, $E_K = {1 \over 2}mu^2$; momentum, $p = mu$ and therefore $p^2 = m^2 u^2$. So: $$E_K = {p^2\over 2m}$$</p>
+
+          <h3>Applications of momentum conservation</h3>
+          <h4>Recoil of a gun</h4>
+          <p>When a gun is fired, the gun moves in the opposite direction (backwards) to that of the shell. This can be explained in terms of momentum conservation. To begin with, both the gun and the shell are stationary, the <i>initial</i> momentum is zero. When the gun is fired the shell is propelled in the forwards direction. In this case, a collision occurs where kinetic energy is gained. The explosion from the gun is internal to the system. The explosion generates a gas at high pressure which exerts a force on the shell and hence on the gun as well. The explosive releases energy which is transferred as kinetic energy to the shell and the gun. Since the inital linear momentum was zero and no <i>external</i> force has acted on the system the momentum must continue to be zero. This can only happen if the shell and the gun move in opposite directions. The shell will move very fast because it has a small mass compared to the gun, the gun will move relatively slowly.</p>
+          <h4>Water hoses</h4>
+          <p>When a garden hose is connected it can start to shoot backwards in unpredictable directions if it is not held when the tap is turned on. The cross-sectional area of the hose is greater than the nozzle from which the water emerges. The mass of water flowing through a point in the hose each second is the same as the mass flowing out of the nozzle. Therfore the speed of the water flowing out of the nozzle needs to be much greater than the speed of the water along the hose.  Therfore water gains momentum as it leaves the hose due to this increased speed. The momentum of the system has to be constant so there must be a force backwards on the end of the hose. The momenum lost by the system per second is (<i>mass of water leaving per second</i>) $\times$ (<i>speed at which water leaves the nozzle – speed in the hose</i>). The mass of water lost per second is $\Delta m \over \Delta t$ and so the momentum lost per second $p$ is ${\Delta m \over \Delta t}(v-u)$ where $v$ is the speed of the water as it leaves the nozzle and $u$ is the speed of the water in the hose.</p>
+          <img src="./Images/NozzleCrossSection.png">
+          <p>If we know the area A of the nozzle and the density $\rho$ of water then $\Delta m \over \Delta t$ can be determined. From the diagram above the cylinder is the volume of water leaving the nozzle persecond where v is the length and A is the area. The volume of water leaving per second is therefore Av. $\Delta m \over \Delta t$ = (density of water) $\times$ (volume of cylinder) = $\rho$Av.</p>
+          <h4>Rocketry</h4>
+          <h4>Helicopters</h4>
+          <h3>Impusle</h3>
+          <p>Newton's second law of motion can be rearranged to get: $$a = {(v-u) \over t}$$ Eliminating a gives: $F = {m(v–u) \over t}$<br>Which means that $\text{force}$</p>
 
           <h1 id="top3">Topic 3: Periodicity</h1>
           <hr></hr>
