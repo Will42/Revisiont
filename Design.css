@@ -36,9 +36,9 @@ img{
 }
 
 .picture-slide{
-	padding-top: 50px;
-    
-    padding: 10px;
+    position: relative;
+    top:40px;
+    margin-bottom: 50px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     /*background-image: url("./Images/pic04.jpg");*/
@@ -366,6 +366,10 @@ th {
 
     .picture-slide h1{
         margin-top: 100px;
+    }
+
+    .picture-slide{
+    	margin-bottom: 100px;
     }
 
     .content p{
