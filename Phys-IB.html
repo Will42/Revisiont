@@ -91,7 +91,7 @@
           myIndex++;
           if (myIndex > x.length) {myIndex = 1}    
           x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 2000); // Change image every 2 seconds
+          setTimeout(carousel, 5000); // Change image every 2 seconds
           }
         </script>
         <div class="info content" id="Info">
@@ -461,12 +461,43 @@
           <h4>Rocketry</h4>
           <h4>Helicopters</h4>
           <h3>Impusle</h3>
-          <p>Newton's second law of motion can be rearranged to get: $$a = {(v-u) \over t}$$ Eliminating a gives: $F = {m(v–u) \over t}$<br>Which means that $\text{force}$</p>
+          <p>Newton's second law of motion can be rearranged to get: $a = {(v-u) \over t}$ Eliminating a gives: $F = {m(v–u) \over t}$<br>Which means that $\text{force} = {\text{change in momentum} \over \text{time taken for change}}$ or <i><b>force $\times$ time = change in momentum</b></i></p>
+          <p>The product of force and time is called the <b>impulse</b>, with units of N s which is an alternate unit for momentum, kg m s$^{–1}$.</p>
+          <h3>Force-time graphs</h3>
+          <img src="./Images/Impulse.png">
+          <p>If a constant force acts on a mass, the graph of force <i>F</i> against time <i>t</i> will look like the first graph. The shaded area between the curve and the $x$ axis is equivalent to the change in momentum (from $F = {\Delta p \over \Delta t}$). The second graph shows force increasing at a constant rate to a maximum $F_{\text{max}}$ then falls back to zero with a total time <i>T</i>. Here the change in momentum is still the are under the curve calculated by: ${1 \over 2}F_{\text{max}}T$. The final graph shows a variable force against time where there seems to be no obvious relationship between the two. To calculate the area you can estimate the number of squares under the graph and use the are of one square to evaluate the change in momentum.</p>
+          <h3>Revisting Newton's Second Law</h3>
+          <p>Through the impulse subtopic, we know that $F = {\Delta p \over \Delta t}$. Expanding this we get: $F = {\Delta (mv) \over \Delta t}$. This can be written to show that: $F = m {\Delta v \over \Delta t} + v {\Delta m \over \Delta t}$. The first part represents $\text{mass} \times {\text{change in velocity} \over \text{change in time}}$ which can be simplified to <i>mass $\times$ acceleration</i>. The second part represents the <i><b>instantaneous velocity</b></i> $\times {\text{change in mass} \over \text{change in time}}$. The extra term takes in account what happens when the mass of an accelerating object is changing.</p>
+          <h3>Momentum and safety</h3>
+          <p>When a car is involved in a collision, the occupant in the car has to lose the same amount of kinetic energy and momentum. This can be via smashing into the windscreen or by being restrained by a seatbelt. With the former case, the time taken for the change in momentum is small, therefore the force will be very large (f $\times$ t = momentum change). The higher the force, the more damage. Seat belts and airbags increase the time taken for occupants in the car to slow down and stop. Thus for a constant change in momentum, a longer stopping time should lead to a smaller and less damaging force.</p>
 
-          <h1 id="top3">Topic 3: Periodicity</h1>
+          <h1 id="top3">Topic 3: Thermal Physics</h1>
           <hr></hr>
+          <h2>3.1 Temperature and energy changes</h2>
+          <h3>Temperature and energy transfer</h3>
+          <p><b>Temperature is a measure of the average kinetic energy of the molecules in a substance.</b> The relative temperature of two objects determines the direction in which energy passes from one object to another; energy will tend to flow from the hotter object to the colder object until both are at the same temperature. When this occurs the objects are in <b>thermal equilibrium</b>. The energy flowing as a result of convection, conduction or thermal radiation is called "heat".</p>
+          <p><b>Temperature</b> is a scalar quantity and is measured in units of degrees Celsius ($^\circ$C) or kelvin (K) using a thermometer.</p>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend risus sed augue molestie, faucibus pretium mi fringilla. Nulla fermentum purus eget est fringilla ultrices. Aliquam imperdiet, diam vitae lobortis sodales, urna diam vehicula leo, ac cursus mi dolor non sem. Aliquam at pharetra risus. Aliquam id purus vitae eros consequat rhoncus vel sit amet velit. Nulla mollis ornare tortor eget pellentesque. Nullam arcu lorem, maximus sit amet eleifend eget, tempor id est. Nulla facilisi. Integer sed neque eros. Donec malesuada arcu id neque semper, non bibendum odio posuere. Praesent malesuada enim eget nisi cursus, non semper ex ultrices. Vestibulum sagittis, leo sit amet dictum pulvinar, neque augue consequat orci, nec sagittis leo eros non lacus. Quisque quis purus elementum, commodo odio eget, finibus eros. Suspendisse mauris ex, condimentum a odio non, pellentesque sodales ante. Ut tempus posuere ipsum efficitur sollicitudin. Aliquam ut consequat nibh.</p>
+          <h3>Absolute temperature</h3>
+          <p>The Celsius temperature scale is based off the tripple point of water. The <b>absolute temperature scale</b> is the standard SI temperature scale which uses the kelvin for units. <b>Absolute temperature</b> is defined to be zero kelvin at absolute zero (the temperature at which all objects have a minimum energy) and 273.16 K at the tripple point of water. An increase of 1 $^\circ$C is an increase of 1 K. Therefore, converting Celsius to absolute temperatures: T(K) = $\theta (^\circ C) + 273$ where T is the absolute temperature and $\theta$ the temperature in Celsius.</p>
+          <h3>Internal energy</h3>
+          <p>Substances consist of particles in constant motion (except at absolute zero). When energy is transferred to a substance the particles move faster and spread out further away from each other. As their separation increases, their potential also increases. As they move faster the amount of kinetic energy they have increases. <b>The internal energy of a substance is the total of the potential and kinetic energies of all the particles in the substance.</b></p>
+          <h3>Specific heat capacity</h3>
+          <p>The specific heat capacity (c) of a substance is the energy required to increase the temperature of 1 kg of a substance by 1 K. The equation for this is:$$c = {Q \over m \Delta T}$$ where $Q$ is the amount of energy supplied to an object of mass $m$ causing its temperature to rise by $\Delta T$. When $Q$ is in J, $m$ in kg, and $\Delta T$ in K, c will have the units of J kg$^{-1}$K$^{-1}$.</p>
+          <h3>Specific latent heat</h3>
+          <p>When an substance undergoes a phase change, its temperature does not increase. This is because the energy is going to overcoming the intermolecular forces between the molecules.</p>
+          <img src="./Images/ThermalGraph.png">
+          <p><b>Specific latent heat of fusion</b> is the energy required to change the phase of 1 kg of a substance from a solid to a liquid without any change in temperature.</p>
+          <p><b>Specific latent heat of vaporization</b> is the energy required to change the phase of 1 kg of a substance from a liquid to a gas without any change in temperature.</p>
+          <p>The equations for specific latent heat take the form: $L = {Q \over m}$.</p>
+          <h3>Molecular explanation of phase change</h3>
+          <p>Transferring energy to a solid increases it's internal energy. Eventually some of the molecules in the solid move far enough away from one another to lose the influence of the other molecules (intermolecular bonds being broken). When this happens, the kinetic energy of the molecules does not increase, instead the energy is used to increase the potential energy of the molecules. Eventually these groups of molecules are sufficiently free so that the solid has melted. The average kinetic energy of the molecule begins to rise again, increasing the temperature of the liquid. The molecules are breaking away from each other and reforming at an equal rate, thus there is no overall change in potential energy. When the liquid reaches its boiling point, individual molecules break away from the entire liauid and the potential begins to rise once more. Here the mean kinetic energy remains constant until all the molecules have separated from each other.</p>
+          <h3>Kinetic theory</h3>
+          <h4>Macroscopic/Microscopic</h4>
+          <p>The <b>macroscopic</b> point of view considers the system as a whole and sees how it interacts with its surroundings.</br>The <b>microscopic</b> point of view looks inside the system to see how its component parts interact with one another.</p>
+          <p></p>
+
+
 
 
           <h1 id="top4">Topic 4: Chemical Bonding and Structure</h1>

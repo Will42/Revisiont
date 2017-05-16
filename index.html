@@ -66,10 +66,28 @@
             </ul>
         
         </div>
-        <div class="picture-slide">
-          <h1>REVISIONT</h1>
-          <p style="text-align:center">Hi! Welcome to Revisiont, a place to hold all your study materials, all while keeping your bag light. Upload a topic, a picture of your notes or general information for a subject to keep for future reference.</p>
+        <div class="picture-slide" >
+          <!--<div style="height:300px;width:500px">-->
+          <img class="mySlides" src="./Images/PhysWall1.jpg" style="width:100%">
+          <img class="mySlides" src="./Images/PhysWall2.jpg" style="width:100%">
+          <img class="mySlides" src="./Images/PhysWall3.jpg" style="width:100%">
         </div>
+        <script>
+          var myIndex = 0;
+          carousel();
+
+          function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 5000); // Change image every 2 seconds
+          }
+        </script>
         <div class="content">
 
           <h1>Title Here</h1>
