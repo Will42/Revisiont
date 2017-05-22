@@ -46,6 +46,7 @@
                 var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
                 if (refSize) {
                     refSize = Math.min(refSize, 2000);
+                    if (refSize <= 500) {refSize = 10;}
                     jssor_1_slider.$ScaleWidth(refSize);
                 }
                 else {
