@@ -20,6 +20,104 @@
       </style>
       <title>IB Physics</title>
 		</head>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-23.1.6.mini.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideWidth: 600,
+              $Cols: 2,
+              $Align: 100,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 2000);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*responsive code end*/
+        });
+    </script>
+    <style>
+        /* jssor slider bullet navigator skin 01 css */
+        /*
+        .jssorb01 div           (normal)
+        .jssorb01 div:hover     (normal mouseover)
+        .jssorb01 .av           (active)
+        .jssorb01 .av:hover     (active mouseover)
+        .jssorb01 .dn           (mousedown)
+        */
+        .jssorb01 {
+            position: absolute;
+        }
+        .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 12px;
+            height: 12px;
+            filter: alpha(opacity=70);
+            opacity: .7;
+            overflow: hidden;
+            cursor: pointer;
+            border: #000 1px solid;
+        }
+        .jssorb01 div { background-color: gray; }
+        .jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+        .jssorb01 .av { background-color: #fff; }
+        .jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+
+        /* jssor slider arrow navigator skin 13 css */
+        /*
+        .jssora13l                  (normal)
+        .jssora13r                  (normal)
+        .jssora13l:hover            (normal mouseover)
+        .jssora13r:hover            (normal mouseover)
+        .jssora13l.jssora13ldn      (mousedown)
+        .jssora13r.jssora13rdn      (mousedown)
+        .jssora13l.jssora13lds      (disabled)
+        .jssora13r.jssora13rds      (disabled)
+        */
+        .jssora13l, .jssora13r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 50px;
+            cursor: pointer;
+            background: url('img/a13.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora13l { background-position: -10px -35px; }
+        .jssora13r { background-position: -70px -35px; }
+        .jssora13l:hover { background-position: -130px -35px; }
+        .jssora13r:hover { background-position: -190px -35px; }
+        .jssora13l.jssora13ldn { background-position: -250px -35px; }
+        .jssora13r.jssora13rdn { background-position: -310px -35px; }
+        .jssora13l.jssora13lds { background-position: -10px -35px; opacity: .3; pointer-events: none; }
+        .jssora13r.jssora13rds { background-position: -70px -35px; opacity: .3; pointer-events: none; }
+    </style>
+
 
 		<body>
         <div class="container">
@@ -72,12 +170,32 @@
             </ul>
         
         </div>
-        <div class="picture-slide" >
           <!--<div style="height:300px;width:500px">-->
-          <img class="mySlides" src="./Images/PhysWall1.jpg" style="width:100%">
-          <img class="mySlides" src="./Images/PhysWall2.jpg" style="width:100%">
-          <img class="mySlides" src="./Images/PhysWall3.jpg" style="width:100%">
+           <div id="jssor_1" style="position:relative;margin:0 auto;top:10px;left:0px;width:800px;height:300px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:800px;height:300px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="Images/PhysWall1.png" />
+            </div>
+            <div>
+                <img data-u="image" src="Images/PhysWall2.png" />
+            </div>
+            <div>
+                <img data-u="image" src="Images/PhysWall3.png" />
+            </div>
+            <div>
+                <img data-u="image" src="Images/PhysWall4.png" />
+            </div>
+            <a data-u="any" href="https://www.jssor.com" style="display:none">jquery slider</a>
         </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;" data-autocenter="1">
+            <div data-u="prototype" style="width:12px;height:12px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora13l" style="top:0px;left:30px;width:40px;height:50px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora13r" style="top:0px;right:30px;width:40px;height:50px;" data-autocenter="2"></span>
+    </div>
         <script>
           var myIndex = 0;
           carousel();
@@ -512,13 +630,16 @@
           <h4>Brownian motion</h4>
           <p>Brownian motion is the irregular (random) motion of suspended particles in fluids due to the bombardment of the particles by the molecules of the medium.</p>
           <h3>Kinetic model of an ideal gas</h3>
-          <p>Assumptions:<br>Newtons's law applies to molecular behaviour<br>There are no intermolecular forces between collisions (perfectly elastic)<br></p>
+          <p>Assumptions:<br> &#8614; Newtons's law applies to molecular behaviour<br> &#8614; There are no intermolecular forces except during a collision<br> &#8614; The molecules are treated as points<br> &#8614; The molecules are in random motion<br> &#8614; The collisions between the molecules and the walls of their containing vessel are perfectly elastic (no energy is lost) <br> &#8614; There is no time spent in these collisions</p>
+          <img src="./Images/KineticModelOfAnIdealGas.png">
 
 
 
-          <h1 id="top4">Topic 4: Chemical Bonding and Structure</h1>
+          <h1 id="top4">Topic 4: Oscillations And Waves</h1>
           <hr></hr>
 
+          <h2>4.1 Oscillations</h2>
+          <h3>Isochronous oscillations</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend risus sed augue molestie, faucibus pretium mi fringilla. Nulla fermentum purus eget est fringilla ultrices. Aliquam imperdiet, diam vitae lobortis sodales, urna diam vehicula leo, ac cursus mi dolor non sem. Aliquam at pharetra risus. Aliquam id purus vitae eros consequat rhoncus vel sit amet velit. Nulla mollis ornare tortor eget pellentesque. Nullam arcu lorem, maximus sit amet eleifend eget, tempor id est. Nulla facilisi. Integer sed neque eros. Donec malesuada arcu id neque semper, non bibendum odio posuere. Praesent malesuada enim eget nisi cursus, non semper ex ultrices. Vestibulum sagittis, leo sit amet dictum pulvinar, neque augue consequat orci, nec sagittis leo eros non lacus. Quisque quis purus elementum, commodo odio eget, finibus eros. Suspendisse mauris ex, condimentum a odio non, pellentesque sodales ante. Ut tempus posuere ipsum efficitur sollicitudin. Aliquam ut consequat nibh.</p>
 
 
