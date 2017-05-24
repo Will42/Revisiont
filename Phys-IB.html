@@ -106,7 +106,7 @@
             width: 40px;
             height: 50px;
             cursor: pointer;
-            background: url('img/a13.png') no-repeat;
+            background: url('./Images/a13.png') no-repeat;
             overflow: hidden;
         }
         .jssora13l { background-position: -10px -35px; }
@@ -191,7 +191,7 @@
         </div>
         <!-- Bullet Navigator -->
         <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;" data-autocenter="1">
-            <div data-u="prototype" style="width:12px;height:12px;"></div>
+            <div data-u="prototype" style="width:10px;height:10px;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;"></div>
         </div>
         <!-- Arrow Navigator -->
         <span data-u="arrowleft" class="jssora13l" style="top:0px;left:30px;width:40px;height:50px;" data-autocenter="2"></span>
@@ -633,6 +633,11 @@
           <h3>Kinetic model of an ideal gas</h3>
           <p>Assumptions:<br> &#8614; Newtons's law applies to molecular behaviour<br> &#8614; There are no intermolecular forces except during a collision<br> &#8614; The molecules are treated as points<br> &#8614; The molecules are in random motion<br> &#8614; The collisions between the molecules and the walls of their containing vessel are perfectly elastic (no energy is lost) <br> &#8614; There is no time spent in these collisions</p>
           <img src="./Images/KineticModelOfAnIdealGas.png">
+          <p>Using the assumptions above it is possible to derive the ideal gas equation:</p>
+          <p>Imagine a box like the one above with volume $V$ that has $N$ molecules moving in it each with mass $m$. The box is a cube with side lengths $L$. Consider the collision of one molecule moving with velocity $c$ towards the right hand wall of the box. The components of the velocity in the x, y, z directions are $c_x, c_y, c_z$ respectively. As the molecule collides with the wall with perfect elasticity, the x component of velocity is reversed whilst its y and z components remain unchanged.<br> The x component of the momentum of the molecule is $mc_x$ before the collision and $-mc_x$ after the collision. The change in momentum is therefore: $-mc_x-(mc_x) = -2mc_x$. The force $F_x$ exerted on the molecule by the wall is therefore $-2mc_x \over t$ where t is the time taken by the molecule to travel from the right-hand wall of the box to the opposite side and back (the time between collisions with the right-hand wall of the box).<br>Thus $t = {2L \over c_x}$ and so $F_m = {-2mc_x \over {2L \over c_x}}$ $ = {-mc_x^2 \over L}$ <br> Using Newton's third law, it is clear that the molecule must exert a force of $mc_x^2 \over L$ on the right-hand wall of the box. However there are N molecules in the box that have a range of speeds so the total force exerted on the right hand wall of the box is: $$F_x = {m \over L} (c^2_{x_1} + c^2_{x_2} + c^2_{x_3} + ... + c^2_{x_N})$$ The mean value of the square of the velocities is given by: $$\bar{c^2_x} = {(c^2_{x_1} + c^2_{x_2} + c^2_{x_3} + ... +c^2_{x_N}) \over N}$$Giving the total force on the right-hand wall of the box to be: $F_x = {Nm \over L} \bar{c^2_x}$. Using Pythagoras' theorem we can see that a 3-d velocity vector with components $c_x, c_y, c_z$ can be used to resolve the vector using the equation: $$\bar{c^2} = \bar{c_x^2} + \bar{c_y^2} + \bar{c_z^2}$$ where $\bar{c^2}$ is the mean square speed of the speed of the molecules. On average the probability of a molecule moving in one direction is equal to it moving in any other direction so the magnitude of the mean components of the velocity will be equal. $$\bar{c^2_x} = \bar{c^2_y} = \bar{c^2_z} \text{ so } \bar{c^2_x} = {1 \over 3}\bar{c^2}$$ So the equation for the total force on the right hand wall becomes $F = {1 \over 3} {Nm \over L^3} \bar{c^2}$<br>The pressure on this wall is given by $p_x = {F_x \over L^2}$ so that $p_x = {1 \over 3} {Nm \over L^3} \bar{c^2}$ or $p_x = {1 \over 3} {Nm \over V} \bar{c^2}$. Since the pressure in a fluid acts equally in all directions the equation can be written as: $p = {1 \over 3} {Nm \over V} \bar{c^2}$<br>N being the number of molecules and m being the mass of the molecules, $Nm \over V^3$ is the density, $\rho$, simplifying the equation to: $p = {1 \over 3} \rho \bar{c^2}$</p>
+          <p>This proof doen not need to be learnt line by line but each step should make sense to you.</p>
+          <h3>Molecular interpretation of temperature</h3>
+          <p>Rearranging $p = {1 \over 3} {Nm \over V} \bar{c^2}$ we get $pV = {Nm \over 3} \bar{c^2}$ <br>Multiplying throughout by $3 \over 2$: ${3 \over 2} pV = N \times {1 \over 2}m \bar{c^2}$. Comparing this with the ideal gas equation pV = nRT we can see that ${3 \over 2}nRT = N \times {1 \over 2} m \bar{c^2}$. </p>
 
 
 
