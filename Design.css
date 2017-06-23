@@ -236,8 +236,23 @@ th {
     color: white;
 }
 
+.sidebyside .image{
+    float: none;
+}
+.sidebyside .sidebysidecontent{
+    padding-top: 0px;
+}
+
 @media screen and (min-width:680px) {
     
+    .sidebyside .image{
+        float: left;
+    }
+    .sidebyside .sidebysidecontent{
+        padding-top: 0px;
+    }
+
+
     .dropdown-content {
         display: none;
         position: fixed;
@@ -305,6 +320,12 @@ th {
         padding: 10px 10px 0px 10px;
         font-size: 15px;
     }
+
+    .smaller a, p{
+        font-size: 10px;
+        padding-top: 5px;
+    }
+
 
     .Dropdown {
         display: block;
